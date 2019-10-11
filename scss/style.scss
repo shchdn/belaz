@@ -800,3 +800,23 @@ $proximanova: 'ProximaNova';
 
 // === / Map === // 
 
+// === Footer === // 
+.footer{
+    background: #000;
+    &-wrapper{
+        height: 120px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-content{
+
+        &-logo{
+            background: url('../img/header-logo.png') no-repeat;
+            background-size: cover;
+            height: 40px;
+            width: 191px;
+        }
+    }
+}
+// === / Footer === // 

@@ -916,3 +916,16 @@ template {
     font-weight: 800;
     text-decoration: none;
     color: #000; }
+
+.footer {
+  background: #000; }
+  .footer-wrapper {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .footer-content-logo {
+    background: url("../img/header-logo.png") no-repeat;
+    background-size: cover;
+    height: 40px;
+    width: 191px; }
