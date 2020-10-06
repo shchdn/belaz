@@ -1,0 +1,63 @@
+.price {
+    background: url('../img/raster/price-background.png') no-repeat left;
+    background-size: contain;
+    &-wrapper{
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        padding: 100px 18px 98px 0px;
+    }
+    &-content{
+        &-title{
+            font-size: 30px;
+            font-weight: 900;
+            text-align: right;
+            margin-bottom: 60px;
+            span {
+                display: block;
+            }
+            
+        }
+        &-input{
+            display: flex;
+            &-box{
+
+                &-email{
+                input{
+                    @include text-input;
+                    background-image: url('../img/vector/icon-email.svg');
+                    margin-right: 30px;
+                    }
+                }
+                &-phone{
+                    input{
+                    @include text-input;
+                    background-image: url('../img/vector/icon-call.svg');
+                    }
+                }
+            }
+        }
+        &-get{
+            display: flex;
+            margin-top:55px;
+            align-items: center;
+            img{
+                padding-right: 30px;
+            }
+            &-title{
+                font-size: 14px;
+                text-align: right;
+                padding-right:30px;
+                span{
+                    display: block;
+                }
+
+            }
+            &-button{
+                @include button;
+                height: 80px;
+                background: $button-price-color;
+            }
+        }
+    }
+}

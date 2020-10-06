@@ -1,0 +1,11 @@
+*.ai
+*.log
+*.pdf
+*.psd
+*.sublime*
+node_modules/
+npm-debug.*
+source/css/*.css
+build/
+Thumbs.db
+.publish/
