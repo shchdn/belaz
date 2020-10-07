@@ -1,45 +1,42 @@
 .warranty{
-    &-wrapper{
+    &__wrapper{
         padding: 100px 0px 100px 0px;
     }
-    &-content{
-
-        &-title{
-            text-align: center;
-            font-size: 36px;
-            font-weight: 900;
-            span{
-                display: block;
-            }
-        }
-        &-bar{
+    &__title{
+        margin: 0 auto;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 900;
+        max-width: 700px;
+    }
+    &-list{
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        &__item{
             display: flex;
-            justify-content: space-between;
-            flex-flow: row wrap;
-            &-item{
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                &-photo{
-                    margin-top: 100px;
-                    width: 230px;
-                    height: 300px;
-                }
-                &-text{
-                    text-align: center;
-                    margin-top: 40px;
-                    font-size: 18px;
-                    width: 345px;
-                }
-                &-title{
-                    margin-top: 40px;
-                    font-weight: 700;
-                    font-size: 18px;
-                    text-decoration: none;
-                    color: #000;
-                    border-bottom: 1px solid #8f8f8f;
-                }
-            }
+            align-items: center;
+            flex-direction: column;
         }
+        &__photo{
+            margin-top: 100px;
+            width: 230px;
+            height: 300px;
+        }
+        &__text{
+            text-align: center;
+            margin-top: 40px;
+            font-size: 18px;
+            width: 345px;
+        }
+        &__title{
+            margin-top: 40px;
+            font-weight: 700;
+            font-size: 18px;
+            text-decoration: none;
+            color: #000;
+            border-bottom: 1px solid #8f8f8f;
+        }
+
     }
 }

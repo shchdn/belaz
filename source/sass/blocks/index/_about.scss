@@ -1,57 +1,49 @@
 .about {
     background: url('../img/raster/about-background.png') no-repeat center;
     background-size: cover;
-    &-wrapper{
-        height: 860px;
-        display: flex;
-        justify-content: flex-start;
+    &__wrapper{
+        // display: flex;
+        max-width: 570px;
+        background-color: $squash;
+        padding: 100px 124px 0px 100px;
     }
 
-    &-content{
-
-        &-box{
-            max-width: 570px;
-            height: 860px;
-            background-color: $squash;
-            padding: 100px 124px 0px 100px;
-            &-title span{
-                font-size: 40px;
-                font-weight: 900;
-                line-height: 1.38;
-                text-transform: uppercase;
-                display: block;
-            }
-            &-subtitle {
-                margin-top: 49px;
-                span{
-                    font-size: 25px;
-                    font-weight: 800;
-                    display: block;
-            }
-            }
-            &-list{
-                margin-top: 100px;
-                list-style: none;
-                padding: 0;
-                span{
-                    display: block;
-                }
-                li{
-                    display: flex;
-                    padding: 0;
-                    align-items: center;
-                }
-                li + li{
-                    padding-top: 48px;
-                }
-                 &-text{
-                     padding-left: 51px;
-                     font-size: 18px;
-                }
-                &-icon{
-                     position: absolute;
-                }
-            }            
+    &__title span{
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 1.38;
+        text-transform: uppercase;
+        display: block;
+    }
+    &__subtitle {
+        margin-top: 49px;
+        span{
+            font-size: 25px;
+            font-weight: 800;
+            display: block;
         }
+    }
+    &__list{
+        margin: 0;
+        margin-top: 100px;
+    }
+}
+.advantages-list{
+    list-style: none;
+    padding: 0;
+    li{
+        display: flex;
+        padding: 0;
+        align-items: center;
+    }
+    li + li{
+        margin-top: 48px;
+    }
+        &-text{
+            padding-left: 51px;
+            font-size: 18px;
+    }
+    &-icon{
+            position: absolute;
     }
 }

@@ -1,47 +1,46 @@
 .shipping{
     background: $section-color;
-    &-wrapper{
+    &__wrapper{
         padding: 100px 0px 100px 0px;
     }
-    &-content{
+    &__title, &__subtitle{
         color:#fff;
-        &-title{
-            margin-bottom:30px;
-            font-size: 36px;
-            font-weight: 900;
-            text-align: center;
-        }
+    }
+    &__title{
+        margin-bottom:30px;
+        font-size: 36px;
+        font-weight: 900;
+        text-align: center;
+    }
 
-        &-subtitle{
-            font-size: 20px;
-            text-align: center;
-        }
-        
-        &-bar{
+    &__subtitle{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    &-list{
+        display: flex;
+        margin-top: 100px;
+        width: 100%;
+        justify-content: space-between;
+        &__item{
             display: flex;
-            margin-top: 100px;
-            width: 100%;
-            justify-content: space-between;
-            &-main{
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                &-icon{
-                    position: absolute;
-                }
-                &-text{
-                    text-align: center;
-                    font-size: 18px;
-                    margin-top: 150px;
-                    span{
-                        display: block;
-                    }
-                }
-                
-            }
-            &-main + &-main{
-                margin-left: 10px;
-            }
+            align-items: center;
+            flex-direction: column;
+            width: 200px;            
+        }
+        &__icon{
+            position: absolute;
+        }
+        &__text{
+            color:#fff;
+            text-align: center;
+            font-size: 18px;
+            margin: 0;
+            margin-top: 150px;
+        }
+        &-main + &-main{
+            margin-left: 10px;
         }
     }
 }

@@ -1,56 +1,48 @@
-.header {
+.page-header {
     background-color: $header-color;
 
-    &-wrapper{
+    &__wrapper{
         display: flex;
         align-items: center;
         min-height:100px;
         justify-content: space-between;
     }
-    
-    &-content{
+    &__logo{
+        background: url('../img/raster/header-logo.png') no-repeat;
+        background-size: cover;
+        height: 40px;
+        min-width: 191px;
+    }
+    &__worktime{
+        margin: 0;
+        font-size:12px;
+        line-height: 24px;
+        text-align: center;
+        color:#fff;
+    }
+}
+.phone{
+    display: flex;
 
-
-        &-logo{
-            background: url('../img/raster/header-logo.png') no-repeat;
-            background-size: cover;
-            height: 40px;
-            min-width: 191px;
-        }
-
-        &-worktime span{
-            color:#fff;
-            font-size:12px;
-            text-align: center;
-            line-height: 24px;
-            display: block;
-        }
-
-        &-phone{
-            display: flex;
-
-            &-number{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                padding-right:20px;
-                &-title{
-                    @include phone;
-                    font-size:18px;
-                    padding: 0;
-                }
-                &-title + &-title{
-                    padding-top: 10px;
-                }
-            }
-            &-button{
-                @include button;
-                background-image: linear-gradient(325deg, #273588, #1c62ac);
-                height:50px;
-                width: 170px;
-                font-size: 12px;
-            }
-        
-        }
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right:20px;
+    }
+    &__number{
+        @include phone;
+        font-size:18px;
+        padding: 0;
+    }
+    &__number + &__number{
+        padding-top: 10px;
+    }
+    &__button{
+        @include button;
+        background-image: linear-gradient(325deg, #273588, #1c62ac);
+        height:50px;
+        width: 170px;
+        font-size: 12px;
     }
 }
