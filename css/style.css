@@ -308,15 +308,28 @@ template {
 [hidden] {
   display: none; }
 
-* {
+html, body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "ProximaNova"; }
+  font-family: "ProximaNova";
+  font-size: 18px;
+  font-weight: normal; }
+
+h1, h2, h3, h4, h5 {
+  font-weight: 900;
+  font-size: 36px; }
 
 .container {
   max-width: 1210px;
   padding: 0 20px;
   margin: 0 auto; }
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  z-index: -1000; }
 
 @font-face {
   font-family: 'ProximaNova';
@@ -373,12 +386,34 @@ template {
   margin: 0;
   padding: 0; }
   .form-section__field {
+    position: relative;
     width: 370px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin: 0; }
-  .form-section__input {
+    .form-section__field--email::after {
+      width: 20px;
+      height: 18px;
+      background: url(../img/vector/sprite.svg#icon-email); }
+    .form-section__field--phone::after {
+      width: 20px;
+      height: 20px;
+      background: url(../img/vector/sprite.svg#icon-call); }
+    .form-section__field--email::after, .form-section__field--phone::after {
+      content: '';
+      -webkit-transform: translate(0, -50%);
+              transform: translate(0, -50%);
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .form-section__field--email .form-section__input-text,
+    .form-section__field--phone .form-section__input-text {
+      padding-right: 80px; }
+  .form-section__input-text {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -386,7 +421,7 @@ template {
     background-color: #f2f2f2;
     background-repeat: no-repeat;
     background-position: 90% center;
-    padding: 30px 30px 30px;
+    padding: 30px;
     font-size: 13px;
     text-transform: uppercase; }
 
@@ -403,11 +438,6 @@ template {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-  .page-header__logo {
-    background: url("../img/raster/header-logo.png") no-repeat;
-    background-size: cover;
-    height: 40px;
-    min-width: 191px; }
   .page-header__worktime {
     margin: 0;
     font-size: 12px;
@@ -466,14 +496,16 @@ template {
   .about__wrapper {
     max-width: 570px;
     background-color: #f7b516;
-    padding: 100px 124px 0px 100px; }
+    padding: 100px 125px 125px 100px; }
   .about__title {
     font-size: 40px;
     font-weight: 900;
     line-height: 1.38;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin: 0; }
   .about__subtitle {
-    margin-top: 49px;
+    margin: 0;
+    margin-top: 50px;
     font-size: 25px;
     font-weight: 800;
     max-width: 295px; }
@@ -484,25 +516,48 @@ template {
 .advantages-list {
   list-style: none;
   padding: 0; }
-  .advantages-list li {
+  .advantages-list__item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 0;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  .advantages-list li + li {
-    margin-top: 48px; }
-  .advantages-list-text {
-    padding-left: 51px;
+    .advantages-list__item--piggy::before {
+      width: 25px;
+      height: 30px;
+      background: url("../img/vector/sprite.svg#icon-piggy-bank"); }
+    .advantages-list__item--truck::before {
+      width: 30px;
+      height: 24px;
+      background: url("../img/vector/sprite.svg#icon-truck"); }
+    .advantages-list__item--calendar::before {
+      width: 30px;
+      height: 30px;
+      background: url("../img/vector/sprite.svg#icon-calendar"); }
+    .advantages-list__item--medal::before {
+      width: 23px;
+      height: 30px;
+      background: url("../img/vector/sprite.svg#icon-medal"); }
+    .advantages-list__item--piggy::before, .advantages-list__item--truck::before, .advantages-list__item--calendar::before, .advantages-list__item--medal::before {
+      content: '';
+      position: absolute;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .advantages-list__item + .advantages-list__item {
+      margin-top: 48px; }
+  .advantages-list__description {
+    margin: 0;
+    margin-left: 50px;
     font-size: 18px; }
   .advantages-list-icon {
     position: absolute; }
 
 .price {
   background: url("../img/raster/price-background.png") no-repeat left;
-  background-size: contain; }
+  background-size: contain;
+  padding: 100px 18px 98px 0px; }
   .price__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -513,59 +568,47 @@ template {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 100px 18px 98px 0px; }
+            flex-direction: column; }
+    .price__wrapper label + label {
+      margin-left: 30px; }
   .price__title {
     margin: 0;
     margin-bottom: 60px;
     font-size: 30px;
-    font-weight: 900;
     text-align: right;
     max-width: 450px; }
-  .price__input {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .price__input-box-email input {
-      border: none;
-      background-color: #f2f2f2;
-      background-repeat: no-repeat;
-      background-position: 90% center;
-      width: 370px;
-      height: 70px;
-      padding: 30px 30px 30px;
-      font-size: 13px;
-      text-transform: uppercase;
-      background-image: url("../img/vector/icon-email.svg");
-      margin-right: 30px; }
-    .price__input-box-phone input {
-      border: none;
-      background-color: #f2f2f2;
-      background-repeat: no-repeat;
-      background-position: 90% center;
-      width: 370px;
-      height: 70px;
-      padding: 30px 30px 30px;
-      font-size: 13px;
-      text-transform: uppercase;
-      background-image: url("../img/vector/icon-call.svg"); }
-  .price__get {
+  .price__description {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 55px;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
-    .price__get img {
-      padding-right: 30px; }
-    .price__get-title {
-      max-width: 190px;
-      font-size: 14px;
-      text-align: right;
-      margin-right: 30px; }
-      .price__get-title span {
-        display: block; }
+            align-items: center;
+    max-width: 190px;
+    font-size: 14px;
+    text-align: right;
+    margin: 0;
+    margin-right: 90px; }
+    .price__description::after {
+      content: '';
+      -webkit-transform: translate(100%);
+              transform: translate(100%);
+      position: absolute;
+      right: -30px;
+      width: 30px;
+      height: 30px;
+      background: url("../img/vector/sprite.svg#icon-clock") no-repeat center;
+      background-size: cover; }
+  .price__input-wrapper, .price__get-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .price__get-wrapper {
+    margin-top: 55px; }
 
 .shipping {
   background: #08243e; }
@@ -1033,7 +1076,6 @@ template {
       background-repeat: no-repeat;
       background-position: 90% center;
       width: 370px;
-      height: 70px;
       padding: 30px 30px 30px;
       font-size: 13px;
       text-transform: uppercase;

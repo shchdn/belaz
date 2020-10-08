@@ -12,14 +12,17 @@
         <header class="page-header">
             <div class="container">
                 <div class="page-header__wrapper">
-                    <div class="page-header__logo"></div>
+                    <img alt="" src="img/raster/header-logo.png" height="40px" width="190px">
+                    <h1 class="visually-hidden">Eddie`s-Car - Магазин запчастей для белаза</h1>
+                    <h2 class="visually-hidden">Часы работы</h2>
                     <p class="page-header__worktime">c 9:00 до 21:00<br>без выходных</p>
                     <div class="page-header__phone phone">
                         <div class="phone__wrapper">
+                            <h2 class="visually-hidden">Связь с нами:</h2>
                             <a href="tel::+78182474725" class="phone__number">+7 (818) 247-47-25</a>
                             <a href="tel::+78182474725" class="phone__number">+7 (818) 247-47-25</a>
                         </div>
-                        <button class="button-header phone__button">заказать звонок</button>
+                        <button class="button-header">Заказать звонок</button>
                     </div>
                 </div>
             </div>
@@ -28,44 +31,20 @@
             <section class="about">
                 <div class="container">
                     <div class="about__wrapper">
-                        <div class="about__title">
-                            Оригинальные запчасти<br>для белаз
-                        </div>
-                        <div class="about__subtitle">
-                            с бесплатной доставкой в Ваш город!
-                        </div>
+                        <h2 class="about__title">Оригинальные запчасти<br>для белаз</h2>
+                        <h3 class="about__subtitle">с бесплатной доставкой в Ваш город!</h3>
                         <ul class="about__list advantages-list">
-                            <li class="">
-                                <div class="advantages-list__icon">
-                                    <img alt="" src="img/vector/icon-piggy-bank.svg">
-                                </div>
-                                <p class="advantages-list__description">
-                                    Дилерские цены - ниже на 20%,<br> работаем без посредников!
-                                </p>
+                            <li class="advantages-list__item advantages-list__item--piggy">
+                                <p class="advantages-list__description">Дилерские цены - ниже на 20%,<br> работаем без посредников!</p>
                             </li>
-                            <li class="">
-                                <div class="advantages-list__icon">
-                                    <img alt="" src="img/vector/icon-truck.svg">
-                                </div>
-                                <p class="advantages-list__description">
-                                    Срочная бесплатная доставка<br>за 7 дней
-                                </p>
+                            <li class="advantages-list__item advantages-list__item--truck">
+                                <p class="advantages-list__description">Срочная бесплатная доставка<br>за 7 дней</p>
                             </li>
-                            <li class="">
-                                <div class="advantages-list__icon">
-                                    <img alt="" src="img/vector/icon-calendar.svg">
-                                </div>
-                                <p class="advantages-list__description">
-                                    Даем рассрочку<br>6 месяцев
-                                </p>
+                            <li class="advantages-list__item advantages-list__item--calendar">
+                                <p class="advantages-list__description">Даем рассрочку<br>6 месяцев</p>
                             </li>
-                            <li class="">
-                                <div class="advantages-list__icon">
-                                    <img alt="" src="img/vector/icon-medal.svg">
-                                </div>
-                                <p class="advantages-list__description">
-                                    Даем гарантию<br> от 12 месяцев
-                                </p>
+                            <li class="advantages-list__item advantages-list__item--medal">
+                                <p class="advantages-list__description">Даем гарантию<br> от 12 месяцев</p>
                             </li>
                         </ul>
                     </div>
@@ -74,20 +53,22 @@
             <section class="price">
                 <div class="container">
                     <div class="price__wrapper">
-                        <p class="price__title">Получите прайс прямо сейчас на электронную почту!</p>
-                        <div class="price__input">
-                            <div class="price__input-box-email">
-                                <input type="text" placeholder="Введите ваш e-mail">
+                        <h2 class="visually-hidden">Прайс-лист</h2>
+                        <h3 class="price__title">Получите прайс прямо сейчас на электронную почту!</h3>
+                        <fieldset class="form-section">
+                            <div class="price__input-wrapper">
+                                <label class="form-section__field form-section__field--email">
+                                    <input class="form-section__input-text" type="text" placeholder="Введите ваш e-mail">
+                                </label>
+                                <label class="form-section__field form-section__field--phone">
+                                    <input class="form-section__input-text" type="text" placeholder="Введите ваш телефон">
+                                </label>
                             </div>
-                            <div class="price__input-box-phone">
-                                <input type="text" placeholder="Введите ваш телефон">
+                            <div class="price__get-wrapper">
+                                <p class="price__description">Прайс придет к Вам на почту в течение 5 минут!</p>
+                                <button class="button-secondary price__get-button">Получить прайс</button>
                             </div>
-                        </div>
-                        <div class="price__get">
-                            <div class="price__get-title">Прайс придет к Вам на почту в течение 5 минут!</div>
-                            <img alt="" src="img/vector/icon-clock.svg">
-                            <button class="button-secondary price__get-button">Получить прайс</button>
-                        </div>
+                        </fieldset>
                     </div>
                 </div>
             </section>
@@ -124,10 +105,10 @@
                         <fieldset class="form-section">
                             <div class="search__wrapper">
                                     <label class="form-section__field">
-                                        <input type="text" class="form-section__input" placeholder="Введите артикул детали">
+                                        <input class="form-section__input-text" type="text" placeholder="Введите артикул детали">
                                     </label>
                                     <label class="form-section__field">
-                                        <input type="text" class="form-section__input" placeholder="Введите ваш телефон">
+                                        <input class="form-section__input-text" type="text" placeholder="Введите ваш телефон">
                                     </label>
                                     <button class="button-primary search__button">Узнать цену</button>
                             </div>
@@ -194,7 +175,7 @@
                         <div class="questions__inner">
                             <ol class="questions-list">
                                 <li class="questions-list__item">
-                                    <input type="checkbox" class="questions-list__item-check" id="question-1" name="">
+                                    <input class="questions-list__item-check" type="checkbox" id="question-1" name="">
                                     <label class="questions-list__issue" for="question-1">Как заказать деталь правильно?</label>
                                     <div class="questions-list__answer">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
@@ -204,7 +185,7 @@
                                     </div>
                                 </li>
                                 <li class="questions-list__item">
-                                    <input type="checkbox" class="questions-list__item-check" id="question-2" name="">
+                                    <input class="questions-list__item-check" type="checkbox" id="question-2" name="">
                                     <label class="questions-list__issue" for="question-2">Что делать, если запчасть не понадобилась?</label>
                                     <div class="questions-list__answer">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
@@ -214,7 +195,7 @@
                                     </div>
                                 </li>
                                 <li class="questions-list__item">
-                                    <input type="checkbox" class="questions-list__item-check" id="question-3" name="">
+                                    <input class="questions-list__item-check" type="checkbox" id="question-3" name="">
                                     <label class="questions-list__issue" for="question-3">Можете ли Вы установить деталь?</label>
                                     <div class="questions-list__answer">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
@@ -224,7 +205,7 @@
                                     </div>
                                 </li>
                                 <li class="questions-list__item">
-                                    <input type="checkbox" class="questions-list__item-check" id="question-4" name="">
+                                    <input class="questions-list__item-check" type="checkbox" id="question-4" name="">
                                     <label class="questions-list__issue" for="question-4">В чем преимущества оригинальных деталей?</label>
                                     <div class="questions-list__answer">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
@@ -234,7 +215,7 @@
                                     </div>
                                 </li>
                                 <li class="questions-list__item">
-                                    <input type="checkbox" class="questions-list__item-check" id="question-5" name="">
+                                    <input class="questions-list__item-check" type="checkbox" id="question-5" name="">
                                     <label class="questions-list__issue" for="question-5">В чем преимущества оригинальных деталей?</label>
                                     <div class="questions-list__answer">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
@@ -274,8 +255,6 @@
                     </div>
                 </div>
             </section>
-            
-            
             <section class="storage">
                 <div class="container">
                     <div class="storage__wrapper">
@@ -318,7 +297,7 @@
                         <a href="tel::+78182474725" class="consultation__subtitle-phone">+7 (818) 247-47-25</a>
                         <div class="consultation-list">
                             <div class="consultation-list__item">
-                                <input type="text" class="consultation-list__input-text" placeholder="Введите ваш телефон">
+                                <input class="consultation-list__input-text" type="text" placeholder="Введите ваш телефон">
                             </div>
                             <div class="consultation-list__item">
                                 <button class="button-primary consultation-list__button">Перезвонить сейчас</button>
@@ -342,7 +321,7 @@
         <footer class="page-footer">
             <div class="container">
                 <div class="page-footer__wrapper">
-                    <div class="page-header__logo"></div>
+                    <img alt="" src="img/raster/header-logo.png" height="40px" width="190px">
                     <p class="page-footer__copyright">© 2016, cделано с командой </p>
                     <div class="contacts page-footer__contacts">
                         <p class="contacts__title">Есть вопросы? Звоните!</p>
