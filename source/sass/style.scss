@@ -1,10 +1,11 @@
 // Global
-@import 'global/vars';
 @import 'global/normalize';
+@import 'global/vars';
+@import 'global/colors';
 @import 'global/scaffolding';
 @import 'global/fonts';
-@import 'global/colors';
 @import 'global/buttons';
+@import 'global/form-section.scss';
 @import 'global/mixins';
 
 // Blocks
@@ -24,7 +25,7 @@
     @import './blocks/index/crew';
     @import './blocks/index/consultation';
     @import './blocks/index/office';
-    //@import './blocks/index/map';
+    @import './blocks/index/map';
 //
 
 // TODO: 

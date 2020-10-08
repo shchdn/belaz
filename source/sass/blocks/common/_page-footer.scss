@@ -1,0 +1,23 @@
+.page-footer{
+    background-color: $header-color;
+    padding: 40px 0 ;
+    color: #fff;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__copyright{
+        // color: #fff;
+    }
+    &__contacts{
+        max-width: 165px;
+    }
+}
+.contacts{
+    &__title{
+        font-size: 13px;
+        margin: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}

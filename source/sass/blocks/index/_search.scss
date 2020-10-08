@@ -1,9 +1,19 @@
 .search{
     background: url('../img/raster/search-background.png') no-repeat center;
     background-size: cover;
+    padding: 100px 0px;
+    color: #fff;
+
     &__wrapper{
-        padding: 100px 0px 100px 0px;
-        color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 -15px;
+        & > *{
+            margin: 0 15px;
+        }
+    }
+    &__title, &__subtitle, &__description{
         text-align: center;
     }
     &__title{
@@ -28,31 +38,33 @@
             font-size: 14px;
             margin-bottom: 16px;
         }
-        // span{
-        //     display: block;
-        // }
     }
-    &__fieldset{
-        border: none;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 60px;
-        flex-wrap: wrap;
-    }
-    &__input{
-        &-item{
-            input{
-                @include text-input;
-            }
-        }
-        &-phone{
-            input{
-                @include text-input;
-                background-image: url('../img/vector/icon-call.svg');
-            }
-        }
-    }
+    // &__form{
+        // border: none;
+        // display: flex;
+        // // justify-content: space-between;
+        // margin: 0;
+        // padding: 0;
+        // margin-bottom: 60px;
+        // flex-wrap: wrap;
+    // }
+    // &__field{
+    // }
+    // &__input{
+    //     // width: 500px;
+    //     @include text-input;
+    //     input{
+            
+    //     }
+    // }
+    // &-phone{
+    //     input{
+    //         @include text-input;
+    //         background-image: url('../img/vector/icon-call.svg');
+    //     }
+    // }
+
     &__button{
-        @include button;
+        // @include button;
     }
 }

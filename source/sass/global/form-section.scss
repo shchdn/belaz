@@ -1,0 +1,48 @@
+.form-section{
+    border: none;
+    margin: 0;
+    padding: 0;
+
+    &__field{
+        position: relative;
+        width: 370px;
+        display: flex;
+        margin: 0;
+        
+        &--email::after{
+            width: 20px;
+            height: 18px;
+            background: url(../img/vector/sprite.svg#icon-email);
+        }
+        &--phone::after{
+            width: 20px;
+            height: 20px;
+            background: url(../img/vector/sprite.svg#icon-call);
+        }
+        &--email::after, &--phone::after{
+            content: '';
+            transform: translate(0, -50%);
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &--email .form-section__input-text,
+        &--phone .form-section__input-text{
+            padding-right: 80px;
+        }
+
+    }
+    &__input-text{
+        flex-grow: 1;
+        border: none;
+        background-color: $input-color;
+        background-repeat: no-repeat;
+        background-position: 90% center;
+        padding: 30px;
+        font-size: 13px;
+        text-transform: uppercase;
+    }
+}

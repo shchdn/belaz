@@ -1,0 +1,24 @@
+.button{
+    &-primary, &-secondary, &-header{
+        border:none;
+        color:#fff;
+        width: 370px;
+        padding: 25px;
+        text-align: center;
+        font-size: 17px;
+        font-weight: 700;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    &-primary{
+        background-color: $squash;
+    }
+    &-secondary{
+        background-color: #1866af;
+    }
+    &-header{
+        width: 170px;
+        font-size: 12px;
+        background: linear-gradient(325deg, #273588, #1c62ac);
+    }
+}

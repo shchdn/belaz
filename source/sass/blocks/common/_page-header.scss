@@ -7,12 +7,6 @@
         min-height:100px;
         justify-content: space-between;
     }
-    &__logo{
-        background: url('../img/raster/header-logo.png') no-repeat;
-        background-size: cover;
-        height: 40px;
-        min-width: 191px;
-    }
     &__worktime{
         margin: 0;
         font-size:12px;
@@ -37,12 +31,5 @@
     }
     &__number + &__number{
         padding-top: 10px;
-    }
-    &__button{
-        @include button;
-        background-image: linear-gradient(325deg, #273588, #1c62ac);
-        height:50px;
-        width: 170px;
-        font-size: 12px;
     }
 }
