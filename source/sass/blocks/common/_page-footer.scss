@@ -5,9 +5,7 @@
     &__wrapper{
         display: flex;
         justify-content: space-between;
-    }
-    &__copyright{
-        // color: #fff;
+        align-items: center;
     }
     &__contacts{
         max-width: 165px;
@@ -19,5 +17,25 @@
         margin: 0;
         margin-bottom: 10px;
         text-align: center;
+    }
+}
+.copyright{
+    margin: 0;
+    font-size: 12px;
+    &__love-icon{
+        display: inline-block;
+        margin-bottom: -5px;
+        width: 15px;
+        height: 15px;
+        background: url('../img/raster/icon-love.png') no-repeat center;
+        font-size: 0;
+    }
+    &__logo{
+        display: inline-block;
+        width: 70px;
+        height: 20px;
+        margin-bottom: -7px;
+        
+
     }
 }

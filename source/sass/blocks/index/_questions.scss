@@ -8,20 +8,17 @@
         padding: 100px 0px 100px 0px;
         color: #fff;
     }
-    
-
     &__title{
         font-size: 36px;
         font-weight: 900;
         text-align: center;
     }
-
     &__subtitle{
         margin-top: 30px;
         font-size: 20px;
+        font-weight: normal;
         text-align: center;
     }
-
     &__inner{
         display: flex;
         justify-content: space-between;
@@ -29,6 +26,7 @@
         margin-top: 100px;
     }
     &-list{
+        @include reset-list;
         &__item{
             padding-left: 30px;
             font-size: 16px;
@@ -57,18 +55,14 @@
             &-check{
                 display: none;
                 &:checked ~ .questions-list__answer{
-                    position: relative;
+                    position: absolute;
                     display:block;
                     visibility: visible;
                     opacity: 1;
                     transition: all 0.3s linear;
                 }    
             }
-
-
-
         }
-
         &__answer{
             opacity: 0;
             visibility: hidden;
@@ -88,7 +82,6 @@
             border-bottom: 10px solid #fff;
 
         }
-
         &__issue{
             border-bottom: 1px solid #fff;
             transition: all 0.2s linear;
@@ -99,19 +92,20 @@
             cursor: pointer;
         }
     }
-
-    &-image{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        height: 100%;
-        &-shadow{
+    &__image{
+        height: 390px;
+        position: relative;
+        &::after{
+            content: 'Эдуард Викторович,\AДиректор ООО "Eddie`s-Car"';
+            white-space: pre;
             font-size: 14px;
             position: absolute;
             padding: 10px 20px;
             background: $section-secondary-color;
             opacity: 0.8;
             width: 230px;
+            bottom: 0;
+            left: 0;
         }
     }
 }

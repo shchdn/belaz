@@ -14,22 +14,17 @@
         text-align: center;
         color:#fff;
     }
-}
-.phone{
-    display: flex;
-
-    &__wrapper{
+    &__contacts{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-right:20px;
-    }
-    &__number{
-        @include phone;
-        font-size:18px;
-        padding: 0;
-    }
-    &__number + &__number{
-        padding-top: 10px;
+        &-inner{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right:20px;
+
+            & > .phone-number + .phone-number{
+                margin-top: 10px;
+            }
+        }
     }
 }

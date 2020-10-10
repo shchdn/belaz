@@ -1,15 +1,13 @@
 .shipping{
     background: $section-color;
     &__wrapper{
-        padding: 100px 0px 100px 0px;
+        padding: 100px 0;
     }
     &__title, &__subtitle{
         color:#fff;
     }
     &__title{
         margin-bottom:30px;
-        font-size: 36px;
-        font-weight: 900;
         text-align: center;
     }
 
@@ -19,20 +17,48 @@
     }
     
     &-list{
+        @include reset-list;
         display: flex;
         margin-top: 100px;
-        width: 100%;
         justify-content: space-between;
         &__item{
             display: flex;
             align-items: center;
             flex-direction: column;
-            width: 200px;            
+            width: 200px;
+            
+            &--engine::before{
+                width: 95px;
+                height: 100px;
+                background: url('../img/vector/sprite.svg#icon-shipping-engine');
+            }
+            &--truck::before{
+                width: 100px;
+                height: 88px;
+                background: url('../img/vector/sprite.svg#icon-shipping-truck');
+            }
+            &--calendar::before{
+                width: 100px;
+                height: 93px;
+                background: url('../img/vector/sprite.svg#icon-shipping-calendar');
+            }
+            &--map::before{
+                width: 95px;
+                height: 92px;
+                background: url('../img/vector/sprite.svg#icon-shipping-map');
+            }
+            &--engine::before, &--truck::before, &--calendar::before, &--map::before{
+                content: '';
+                position: absolute;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
         }
         &__icon{
             position: absolute;
         }
-        &__text{
+        &__description{
             color:#fff;
             text-align: center;
             font-size: 18px;

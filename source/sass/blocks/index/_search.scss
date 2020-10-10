@@ -17,54 +17,27 @@
         text-align: center;
     }
     &__title{
-        font-size: 30px;
-        font-weight: 900;
         margin-bottom:30px;
         &-phone{
-            @include phone;
+            display: block;
             font-size: 30px;
+            margin-top: 15px;
         }
     }
     &__subtitle{
         font-size: 20px;
+        font-weight: normal;
         margin: 0 auto;
         margin-bottom: 60px;
-        max-width: 620px;
-        &-secondary{
-            font-size: 14px;
-            margin-bottom: 30px;
-        }
-        &-thirdly{
-            font-size: 14px;
-            margin-bottom: 16px;
-        }
     }
-    // &__form{
-        // border: none;
-        // display: flex;
-        // // justify-content: space-between;
-        // margin: 0;
-        // padding: 0;
-        // margin-bottom: 60px;
-        // flex-wrap: wrap;
-    // }
-    // &__field{
-    // }
-    // &__input{
-    //     // width: 500px;
-    //     @include text-input;
-    //     input{
-            
-    //     }
-    // }
-    // &-phone{
-    //     input{
-    //         @include text-input;
-    //         background-image: url('../img/vector/icon-call.svg');
-    //     }
-    // }
-
-    &__button{
-        // @include button;
+    &__description{
+        margin-top: 60px;
+        font-size: 14px;
+        span{
+            display: block;
+        } 
+        span + span{
+            margin-top: 30px;
+        }
     }
 }

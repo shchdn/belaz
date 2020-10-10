@@ -19,8 +19,19 @@ h1, h2, h3, h4, h5 {
 
 .visually-hidden {
     position: absolute;
-    clip: rect(0 0 0 0);
-    height: 1px;
     width: 1px;
-    z-index: -1000;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.phone-number{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 900;
+    font-size:18px;
+    padding: 0;
 }

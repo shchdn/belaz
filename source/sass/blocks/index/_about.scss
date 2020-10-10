@@ -29,8 +29,8 @@
     }
 }
 .advantages-list{
-    list-style: none;
-    padding: 0;
+    @include reset-list;
+    margin-top: 100px;
     &__item{
         display: flex;
         align-items: center;
