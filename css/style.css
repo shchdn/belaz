@@ -517,6 +517,9 @@ h1, h2, h3, h4, h5 {
   background-color: #191919;
   padding: 40px 0;
   color: #fff; }
+  @media (max-width: 767px) {
+    .page-footer {
+      padding: 20px 0; } }
   .page-footer__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -545,6 +548,9 @@ h1, h2, h3, h4, h5 {
 .copyright {
   margin: 0;
   font-size: 12px; }
+  @media (max-width: 767px) {
+    .copyright {
+      margin: 20px 0; } }
   .copyright__love-icon {
     display: inline-block;
     margin-bottom: -5px;
