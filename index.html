@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
     <head>
         <meta charset="UTF-8">
         <meta content="width=device-width,initial-scale=1" name="viewport">
@@ -12,15 +12,15 @@
         <header class="page-header">
             <div class="container">
                 <div class="page-header__wrapper">
-                    <img alt="" src="img/raster/header-logo.png" height="40px" width="190px">
+                    <a href="" class="header-logo__link"><img alt="" src="img/raster/header-logo.png" height="40px" width="190px"></a>
                     <h1 class="visually-hidden">Eddie`s-Car - Магазин запчастей для белаза</h1>
                     <h2 class="visually-hidden">Часы работы</h2>
                     <p class="page-header__worktime">c 9:00 до 21:00<br>без выходных</p>
-                    <div class="page-header__phone phone">
-                        <div class="phone__wrapper">
+                    <div class="page-header__contacts">
+                        <div class="page-header__contacts-inner">
                             <h2 class="visually-hidden">Связь с нами:</h2>
-                            <a href="tel::+78182474725" class="phone__number">+7 (818) 247-47-25</a>
-                            <a href="tel::+78182474725" class="phone__number">+7 (818) 247-47-25</a>
+                            <a href="tel::+78182474725" class="phone-number">+7 (818) 247-47-25</a>
+                            <a href="tel::+78182474725" class="phone-number">+7 (818) 247-47-25</a>
                         </div>
                         <button class="button-header">Заказать звонок</button>
                     </div>
@@ -35,10 +35,10 @@
                         <h3 class="about__subtitle">с бесплатной доставкой в Ваш город!</h3>
                         <ul class="about__list advantages-list">
                             <li class="advantages-list__item advantages-list__item--piggy">
-                                <p class="advantages-list__description">Дилерские цены - ниже на 20%,<br> работаем без посредников!</p>
+                                <p class="advantages-list__description">Дилерские цены - ниже на 20%, работаем без посредников!</p>
                             </li>
                             <li class="advantages-list__item advantages-list__item--truck">
-                                <p class="advantages-list__description">Срочная бесплатная доставка<br>за 7 дней</p>
+                                <p class="advantages-list__description">Срочная бесплатная доставка за 7 дней</p>
                             </li>
                             <li class="advantages-list__item advantages-list__item--calendar">
                                 <p class="advantages-list__description">Даем рассрочку<br>6 месяцев</p>
@@ -55,123 +55,119 @@
                     <div class="price__wrapper">
                         <h2 class="visually-hidden">Прайс-лист</h2>
                         <h3 class="price__title">Получите прайс прямо сейчас на электронную почту!</h3>
-                        <fieldset class="form-section">
+                        <form>
                             <div class="price__input-wrapper">
                                 <label class="form-section__field form-section__field--email">
-                                    <input class="form-section__input-text" type="text" placeholder="Введите ваш e-mail">
+                                    <input class="form-section__input-text" type="text" placeholder="Введите ваш e-mail" required="">
                                 </label>
                                 <label class="form-section__field form-section__field--phone">
-                                    <input class="form-section__input-text" type="text" placeholder="Введите ваш телефон">
+                                    <input class="form-section__input-text" type="text" placeholder="Введите ваш телефон" required="">
                                 </label>
                             </div>
                             <div class="price__get-wrapper">
                                 <p class="price__description">Прайс придет к Вам на почту в течение 5 минут!</p>
-                                <button class="button-secondary price__get-button">Получить прайс</button>
+                                <button class="button-secondary price__get-button" type="submit">Получить прайс</button>
                             </div>
-                        </fieldset>
+                        </form>
                     </div>
                 </div>
             </section>
             <section class="shipping">
                 <div class="container">
                     <div class="shipping__wrapper">
-                        <div class="shipping__title">Вам не придется ждать!</div>
-                        <div class="shipping__subtitle">Любые запчасти для всех моделей Белаз всегда в наличии!</div>
+                        <h2 class="visually-hidden">Доставка</h2>
+                        <h3 class="shipping__title">Вам не придется ждать!</h3>
+                        <h4 class="shipping__subtitle">Любые запчасти для всех моделей Белаз всегда в наличии!</h4>
                         <ul class="shipping-list">
-                            <div class="shipping-list__item">
-                                <div class="shipping-list__icon"><img alt="" src="img/vector/icon-shipping-engine.svg"></div>
-                                <p class="shipping-list__text">Любые типы деталей от шайбы до двигателя!</p>
-                            </div>
-                            <div class="shipping-list__item">
-                                <div class="shipping-list__icon"><img alt="" src="img/vector/icon-shipping-truck.svg"></div>
-                                <p class="shipping-list__text">Все модификации Белаз от 45т до 450 т</p>
-                            </div>
-                            <div class="shipping-list__item">
-                                <div class="shipping-list__icon"><img alt="" src="img/vector/icon-shipping-calendar.svg"></div>
-                                <p class="shipping-list__text">Отгружаем в день заказа!</p>
-                            </div>
-                            <div class="shipping-list__item">
-                                <div class="shipping-list__icon"><img alt="" src="img/vector/icon-shipping-map.svg"></div>
-                                <p class="shipping-list__text">Доставим в любое место!</p>
-                            </div>
+                            <li class="shipping-list__item shipping-list__item--engine">
+                                <p class="shipping-list__description">Любые типы деталей от шайбы до двигателя!</p>
+                            </li>
+                            <li class="shipping-list__item shipping-list__item--truck">
+                                <p class="shipping-list__description">Все модификации Белаз от 45т до 450 т</p>
+                            </li>
+                            <li class="shipping-list__item shipping-list__item--calendar">
+                                <p class="shipping-list__description">Отгружаем в день заказа!</p>
+                            </li>
+                            <li class="shipping-list__item shipping-list__item--map">
+                                <p class="shipping-list__description">Доставим в любое место!</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </section>
             <section class="search">
                 <div class="container">
-                        <div class="search__title">Ищете конкретную деталь?</div>
-                        <div class="search__subtitle">Если у Вас есть артикул - введите его в поле ниже и получите цену<br>ПРЯМО СЕЙЧАС!</div>
-                        <fieldset class="form-section">
-                            <div class="search__wrapper">
-                                    <label class="form-section__field">
-                                        <input class="form-section__input-text" type="text" placeholder="Введите артикул детали">
-                                    </label>
-                                    <label class="form-section__field">
-                                        <input class="form-section__input-text" type="text" placeholder="Введите ваш телефон">
-                                    </label>
-                                    <button class="button-primary search__button">Узнать цену</button>
-                            </div>
-                        </fieldset>
-
-                        <p class="search__description">Мы перезвоним вам в течение 3 минут и назовем цену детали!<br>Или Вы можете перезвонить нам сами:</p>
-                        <a href="tel::+78182474725" class="search__title-phone">+7 (818) 247-47-25</a>
+                    <h2 class="search__title">Ищете конкретную деталь?</h2>
+                    <h3 class="search__subtitle">Если у Вас есть артикул - введите его в поле ниже и получите цену<br>ПРЯМО СЕЙЧАС!</h3>
+                    <form class="search__wrapper">
+                        <label class="form-section__field">
+                            <input class="form-section__input-text" type="text" placeholder="Введите артикул детали" required="">
+                        </label>
+                        <label class="form-section__field form-section__field--phone">
+                            <input class="form-section__input-text" type="text" placeholder="Введите ваш телефон" required="">
+                        </label>
+                        <button class="button-primary search__button" type="submit">Узнать цену</button>
+                    </form>
+                    <p class="search__description">
+                        <span>Мы перезвоним вам в течение 3 минут и назовем цену детали!</span>
+                        <span>Или Вы можете перезвонить нам сами:</span>
+                        <a href="tel::+78182474725" class="phone-number search__title-phone">+7 (818) 247-47-25</a>
+                    </p>
                 </div>
             </section>
             <section class="warranty">
                 <div class="container">
-                    <div class="warranty__wrapper">
-                        <div class="warranty__title">Мы гарантируем сохранность деталей во время перевозки!</div>
-                        <div class="warranty-list">
-                            <div class="warranty-list__item">
-                                <div class="warranty-list__photo"><img alt="" src="img/raster/icon-warranty-agreement.png"></div>
-                                <div class="warranty-list__text">Гарантия на целостность поставки прописана в договоре</div>
-                                <a href="#" class="warranty-list__title">ПОДРОБНЕЕ</a>
-                            </div>
-                            <div class="warranty-list__item">
-                                <div class="warranty-list__photo"><img alt="" src="img/raster/icon-warranty-storage.png"></div>
-                                <div class="warranty-list__text">Каждая запчасть доставляется с завода в жесткой упаковке</div>
-                                <a href="#" class="warranty-list__title">ПОДРОБНЕЕ</a>
-                            </div>
-                            <div class="warranty-list__item">
-                                <div class="warranty-list__photo"><img alt="" src="img/raster/icon-warranty-parts.png"></div>
-                                <div class="warranty-list__text">Дополнительный контроль качества нашими специалистами</div>
-                                <a href="#" class="warranty-list__title">ПОДРОБНЕЕ</a>
-                            </div>
-                        </div>
-                    </div>
+                    <h2 class="warranty__title">Мы гарантируем сохранность деталей во время перевозки!</h2>
+                    <ul class="warranty-list">
+                        <li class="warranty-list__item">
+                            <img alt="" src="img/raster/icon-warranty-agreement.png" class="warranty-list__photo">
+                            <p class="warranty-list__description">Гарантия на целостность поставки прописана в договоре</p>
+                            <a href="#" class="warranty-list__link">Подробнее</a>
+                        </li>
+                        <li class="warranty-list__item">
+                            <img alt="" src="img/raster/icon-warranty-storage.png" class="warranty-list__photo">
+                            <p class="warranty-list__description">Каждая запчасть доставляется с завода в жесткой упаковке</p>
+                            <a href="#" class="warranty-list__link">Подробнее</a>
+                        </li>
+                        <li class="warranty-list__item">
+                            <img alt="" src="img/raster/icon-warranty-parts.png" class="warranty-list__photo">
+                            <p class="warranty-list__description">Дополнительный контроль качества нашими специалистами</p>
+                            <a href="#" class="warranty-list__link">Подробнее</a>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <section class="bonus">
                 <div class="container">
                     <div class="bonus__wrapper">
-                        <div class="bonus__title">У нас разработаны бонусные системы и скидки для наших клиентов</div>
-                        <div class="bonus-list">
-                            <div class="bonus-list__item">
-                                <div class="bonus-list__icon">10%</div>
-                                <div class="bonus-list__description">Дополнительная скидка 10% на вторую запчасть и любые последующие</div>
-                            </div>
-                            <div class="bonus-list__item">
-                                <div class="bonus-list__icon">20%</div>
-                                <div class="bonus-list__description">Скидка 20% при заключении договора на годовое сервисное обслуживание</div>
-                            </div>
-                            <div class="bonus-list__item">
-                                <div class="bonus-list__icon"><img alt="" src="img/vector/icon-bonus-truck.svg"></div>
-                                <div class="bonus-list__description">Бесплатная доставка по всей России для всех клиентов </div>
-                            </div>
-                            <div class="bonus-list__item">
-                                <div class="bonus-list__icon"><img alt="" src="img/vector/icon-bonus-telemarketer.svg"></div>
-                                <div class="bonus-list__description">Бесплатная круглосуточная техническая поддержка</div>
-                            </div>
-                        </div>
+                        <h2 class="visually-hidden">Бонусы</h2>
+                        <h3 class="bonus__title">У нас разработаны бонусные системы и скидки для наших клиентов</h3>
+                        <ul class="bonus-list">
+                            <li class="bonus-list__item">
+                                <span class="bonus-list__icon bonus-list__icon--sale-10"></span>
+                                <p class="bonus-list__description">Дополнительная скидка 10% на вторую запчасть и любые последующие</p>
+                            </li>
+                            <li class="bonus-list__item">
+                                <span class="bonus-list__icon bonus-list__icon--sale-20"></span>
+                                <p class="bonus-list__description">Скидка 20% при заключении договора на годовое сервисное обслуживание</p>
+                            </li>
+                            <li class="bonus-list__item">
+                                <span class="bonus-list__icon bonus-list__icon--truck"></span>
+                                <p class="bonus-list__description">Бесплатная доставка по всей России для всех клиентов </p>
+                            </li>
+                            <li class="bonus-list__item">
+                                <span class="bonus-list__icon bonus-list__icon--telemarketer"></span>
+                                <p class="bonus-list__description">Бесплатная круглосуточная техническая поддержка</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
             <section class="questions">
                 <div class="container">
                     <div class="questions__wrapper">
-                        <div class="questions__title">У Вас остались вопросы?</div>
-                        <div class="questions__subtitle">На Ваши вопросы отвечает Эдуард</div>
+                        <h2 class="questions__title">У Вас остались вопросы?</h2>
+                        <h3 class="questions__subtitle">На Ваши вопросы отвечает Эдуард</h3>
                         <div class="questions__inner">
                             <ol class="questions-list">
                                 <li class="questions-list__item">
@@ -228,104 +224,97 @@
                                     <a href="#">Еще вопросы</a>
                                 </li>
                             </ol>
-                            <div class="questions__image"><img alt="" src="img/raster/questions-image.png"><div class="questions__image-shadow">Эдуард Викторович, Директор ООО "Eddie`s-Car"</div></div>
+                            <div class="questions__image-wrapper">
+                                <img alt="" src="img/raster/questions-image.png" class="questions__image" height="390px" width="570px">
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="comfort">
                 <div class="container">
-                    <div class="comfort__wrapper">
-                        <div class="comfort__title">С нами удобно работать!</div>
-                        <div class="comfort__subtitle">Более 70% клиентов приходят к нам по рекомендации!</div>
-                        <div class="comfort-list">
-                            <div class="comfort-list__item">
-                                <div class="comfort-list__icon"><img alt="" src="img/vector/icon-comfort-wallet.svg"></div>
-                                <div class="comfort-list__title">Вы вносите предоплату в размере 50% от стоимости запчасти</div>
-                            </div>
-                            <div class="comfort-list__item">
-                                <div class="comfort-list__icon"><img alt="" src="img/vector/icon-comfort-truck.svg"></div>
-                                <div class="comfort-list__title">Отправляем запчасти в день заказа</div>
-                            </div>
-                            <div class="comfort-list__item">
-                                <div class="comfort-list__icon"><img alt="" src="img/vector/icon-comfort-notepad.svg"></div>
-                                <div class="comfort-list__title">Получаете деталь, проверяете, оплачиваете оставшиеся 50%</div>
-                            </div>
-                        </div>
-                    </div>
+                    <h2 class="comfort__title">С нами удобно работать!</h2>
+                    <h3 class="comfort__subtitle">Более 70% клиентов приходят к нам по рекомендации!</h3>
+                    <ul class="comfort-list">
+                        <li class="comfort-list__item comfort-list__item--wallet">
+                            <p class="comfort-list__description">Вы вносите предоплату в размере 50% от стоимости запчасти</p>
+                        </li>
+                        <li class="comfort-list__item comfort-list__item--truck">
+                            <p class="comfort-list__description">Отправляем запчасти в день заказа</p>
+                        </li>
+                        <li class="comfort-list__item comfort-list__item--notepad">
+                            <p class="comfort-list__description">Получаете деталь, проверяете, оплачиваете оставшиеся 50%</p>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <section class="storage">
                 <div class="container">
                     <div class="storage__wrapper">
-                        <div class="storage__title">У нас собственный склад!</div>
-                        <div class="storage__subtitle">Это позволяет нам быстро обрабатывать запросы и отгружать детали в день заказа!</div>
-                        <div class="storage-list">
-                            <div class="storage-list__item"><img alt="" src="img/raster/storage-item-1.png"></div>
-                            <div class="storage-list__item"><img alt="" src="img/raster/storage-item-2.png"></div>
-                            <div class="storage-list__item"><img alt="" src="img/raster/storage-item-3.png"></div>
-                        </div>
+                        <h2 class="storage__title">У нас собственный склад!</h2>
+                        <h3 class="storage__subtitle">Это позволяет нам быстро обрабатывать запросы и отгружать детали в день заказа!</h3>
+                        <ul class="storage-list">
+                            <li><img alt="" src="img/raster/storage-item-1.png" class="storage-list__item"></li>
+                            <li><img alt="" src="img/raster/storage-item-2.png" class="storage-list__item"></li>
+                            <li><img alt="" src="img/raster/storage-item-3.png" class="storage-list__item"></li>
+                        </ul>
                     </div>
                 </div>
             </section>
             <section class="crew">
                 <div class="container">
-                    <div class="crew__wrapper">
-                        <div class="crew__title">У нас в штате есть мобильные бригады, готовые выехать на сервисное обслуживание, ремонт и проведение диагностики!</div>
-                        <div class="crew-list">
-                            <div class="crew-list__item">
-                                <div class="crew-list__icon"><img alt="" src="img/vector/icon-crew-delivery.svg"></div>
-                                <div class="crew-list__title">Организуем выезд специалистов в течение двух дней</div>
-                            </div>
-                            <div class="crew-list__item">
-                                <div class="crew-list__icon"><img alt="" src="img/vector/icon-crew-toolbox.svg"></div>
-                                <div class="crew-list__title">Бригады укомплектованы всем необходимым оборудованием для производства работ любой сложности</div>
-                            </div>
-                            <div class="crew-list__item">
-                                <div class="crew-list__icon"><img alt="" src="img/vector/icon-crew-certificate.svg"></div>
-                                <div class="crew-list__title">Все специалисты проходят обучение и ежегодную аттестацию</div>
-                            </div>
-                        </div>
-                    </div>
+                    <h2 class="visually-hidden">Выезд на дом</h2>
+                    <h3 class="crew__title">У нас в штате есть мобильные бригады, готовые выехать на сервисное обслуживание, ремонт и проведение диагностики!</h3>
+                    <ul class="crew-list">
+                        <li class="crew-list__item">
+                            <div class="crew-list__icon crew-list__icon--deliveliry"></div>
+                            <p class="crew-list__description">Организуем выезд специалистов в течение двух дней</p>
+                        </li>
+                        <li class="crew-list__item">
+                            <div class="crew-list__icon crew-list__icon--toolbox"></div>
+                            <p class="crew-list__description">Бригады укомплектованы всем необходимым оборудованием для производства работ любой сложности</p>
+                        </li>
+                        <li class="crew-list__item">
+                            <div class="crew-list__icon crew-list__icon--certificate"></div>
+                            <p class="crew-list__description">Все специалисты проходят обучение и ежегодную аттестацию</p>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <section class="consultation">
                 <div class="container">
-                    <div class="consultation__wrapper">
-                        <div class="consultation__title">Если Вам необходима бесплатная консультация по вопросу обслуживания</div>
-                        <div class="consultation__subtitle">Звоните нам по телефону:</div>
-                        <a href="tel::+78182474725" class="consultation__subtitle-phone">+7 (818) 247-47-25</a>
-                        <div class="consultation-list">
-                            <div class="consultation-list__item">
-                                <input class="consultation-list__input-text" type="text" placeholder="Введите ваш телефон">
-                            </div>
-                            <div class="consultation-list__item">
-                                <button class="button-primary consultation-list__button">Перезвонить сейчас</button>
-                            </div>
-                        </div>
-                    </div>
+                    <h2 class="visually-hidden">Консультация</h2>
+                    <h3 class="consultation__title">Если Вам необходима бесплатная консультация по вопросу обслуживания</h3>
+                    <p class="consultation__subtitle">Звоните нам по телефону:</p>
+                    <a href="tel::+78182474725" class="phone-number consultation__phone">+7 (818) 247-47-25</a>
+                    <form class="consultation__input-wrapper">
+                        <label class="form-section__field form-section__field--phone">
+                            <input class="form-section__input-text" type="text" placeholder="Введите ваш телефон" required="">
+                        </label>
+                        <button class="button-primary consultation__button" type="submit">Перезвонить сейчас</button>
+                    </form>
                 </div>
             </section>
             <section class="office">
                 <div class="container">
-                    <div class="office__wrapper">
-                        <div class="office__title">Приезжайте в наш офис!</div>
-                        <div class="office__subtitle">г. Архангельск, Москва-Сити, оф. 3725</div>
-                        <a href="tel::+78182474725" class="office__phone">+7 (818) 247-47-25</a>
-                    </div>
+                    <h2 class="office__title">Приезжайте в наш офис!</h2>
+                    <p class="office__address">г. Архангельск, Москва-Сити, оф. 3725</p>
+                    <a href="tel::+78182474725" class="phone-number office__phone">+7 (818) 247-47-25</a>
                 </div>
             </section>
-            <section id="map">
-            </section>
+            <section id="map"></section>
         </main>
         <footer class="page-footer">
             <div class="container">
                 <div class="page-footer__wrapper">
-                    <img alt="" src="img/raster/header-logo.png" height="40px" width="190px">
-                    <p class="page-footer__copyright">© 2016, cделано с командой </p>
+                    <a href="" class="header-logo__link"><img alt="" src="img/raster/header-logo.png" height="40px" width="190px"></a>
+                    <p class="copyright">
+                        © 2016, cделано с <span class="copyright__love-icon"><span class="visually-hidden">любовью</span></span> командой 
+                        <a href="" class="copyright__link"><span class="visually-hidden">Да!Маркетинг</span><img alt="" src="img/raster/copyright-logo.png" class="copyright__logo"></a>
+                    </p>
                     <div class="contacts page-footer__contacts">
                         <p class="contacts__title">Есть вопросы? Звоните!</p>
-                        <a href="tel::+78182474725" class="phone__number">+7 (818) 247-47-25</a>
+                        <a href="tel::+78182474725" class="phone-number">+7 (818) 247-47-25</a>
                     </div>
                 </div>
             </div>
