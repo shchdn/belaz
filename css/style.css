@@ -434,10 +434,18 @@ h1, h2, h3, h4, h5 {
       width: 20px;
       height: 18px;
       background: url(../img/vector/sprite.svg#icon-email); }
+      @media (max-width: 767px) {
+        .form-section__field--email::after {
+          width: 16px;
+          height: 14px; } }
     .form-section__field--phone::after {
       width: 20px;
       height: 20px;
       background: url(../img/vector/sprite.svg#icon-call); }
+      @media (max-width: 767px) {
+        .form-section__field--phone::after {
+          width: 15px;
+          height: 15px; } }
     .form-section__field--email::after, .form-section__field--phone::after {
       content: '';
       -webkit-transform: translate(0, -50%);
@@ -449,9 +457,16 @@ h1, h2, h3, h4, h5 {
       background-repeat: no-repeat;
       background-position: center;
       cursor: text; }
+      @media (max-width: 767px) {
+        .form-section__field--email::after, .form-section__field--phone::after {
+          right: 15px; } }
     .form-section__field--email .form-section__input-text,
     .form-section__field--phone .form-section__input-text {
       padding-right: 80px; }
+      @media (max-width: 767px) {
+        .form-section__field--email .form-section__input-text,
+        .form-section__field--phone .form-section__input-text {
+          padding-right: 40px; } }
   .form-section__input-text {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -463,6 +478,9 @@ h1, h2, h3, h4, h5 {
     padding: 30px;
     font-size: 13px;
     text-transform: uppercase; }
+    @media (max-width: 767px) {
+      .form-section__input-text {
+        padding: 30px 15px; } }
 
 .page-header {
   background-color: #191919; }
