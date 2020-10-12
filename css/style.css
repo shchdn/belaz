@@ -527,6 +527,12 @@ h1, h2, h3, h4, h5 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    @media (max-width: 767px) {
+      .page-footer__wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
   .page-footer__contacts {
     max-width: 165px; }
 
@@ -773,7 +779,9 @@ h1, h2, h3, h4, h5 {
     margin-top: 100px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
     @media (max-width: 1249px) {
       .shipping-list {
         -ms-flex-pack: distribute;
@@ -938,7 +946,7 @@ h1, h2, h3, h4, h5 {
       text-align: center;
       margin-top: 40px;
       font-size: 18px;
-      width: 345px; }
+      max-width: 345px; }
     .warranty-list__link {
       margin-top: 40px;
       font-weight: 700;
@@ -1095,6 +1103,9 @@ h1, h2, h3, h4, h5 {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         width: auto;
         margin-top: 50px; } }
   .questions-list {
@@ -1145,6 +1156,9 @@ h1, h2, h3, h4, h5 {
       width: 330px;
       position: absolute;
       color: #000; }
+      @media (max-width: 767px) {
+        .questions-list__answer {
+          width: auto; } }
     .questions-list__answer::after {
       content: '';
       position: absolute;
@@ -1167,12 +1181,19 @@ h1, h2, h3, h4, h5 {
       .questions__image {
         height: 300px;
         width: auto; } }
+    @media (max-width: 767px) {
+      .questions__image {
+        height: 160px; } }
     .questions__image-wrapper {
       height: 390px;
       position: relative; }
       @media (max-width: 1249px) {
         .questions__image-wrapper {
           height: 300px; } }
+      @media (max-width: 767px) {
+        .questions__image-wrapper {
+          height: 160px;
+          width: 234px; } }
       .questions__image-wrapper::after {
         content: 'Эдуард Викторович,\AДиректор ООО "Eddie`s-Car"';
         white-space: pre;
@@ -1184,6 +1205,11 @@ h1, h2, h3, h4, h5 {
         width: 230px;
         bottom: 0;
         left: 0; }
+        @media (max-width: 767px) {
+          .questions__image-wrapper::after {
+            font-size: 10px;
+            width: auto;
+            padding: 5px; } }
 
 .comfort {
   padding: 100px 0; }
@@ -1208,7 +1234,9 @@ h1, h2, h3, h4, h5 {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around; }
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
     .comfort-list__item {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1287,9 +1315,16 @@ h1, h2, h3, h4, h5 {
         margin: 0; } }
     .storage-list li {
       margin: 15px; }
+      @media (max-width: 767px) {
+        .storage-list li {
+          margin: 0; } }
     .storage-list__item {
       height: 270px;
       width: 370px; }
+      @media (max-width: 767px) {
+        .storage-list__item {
+          width: 100%;
+          height: auto; } }
 
 .crew {
   padding: 100px 0 85px 0; }
@@ -1309,7 +1344,9 @@ h1, h2, h3, h4, h5 {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin-top: 85px; }
+    margin-top: 85px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
     @media (max-width: 1249px) {
       .crew-list {
         margin-top: 50px; } }
@@ -1339,6 +1376,10 @@ h1, h2, h3, h4, h5 {
       width: 170px;
       border-radius: 50%;
       border: 5px solid #ffbc3b; }
+      @media (max-width: 767px) {
+        .crew-list__icon {
+          height: 120px;
+          width: 120px; } }
       .crew-list__icon--deliveliry::before {
         width: 70px;
         height: 57px;
@@ -1359,10 +1400,12 @@ h1, h2, h3, h4, h5 {
         background-position: center; }
     .crew-list__description {
       margin: 0;
-      font-size: 18px;
       margin-top: 40px;
       text-align: center;
       max-width: 300px; }
+      @media (max-width: 767px) {
+        .crew-list__description {
+          margin-top: 20px; } }
 
 .consultation {
   background: url("../img/raster/consultation-background.png") no-repeat center;
