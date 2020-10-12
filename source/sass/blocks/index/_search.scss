@@ -3,14 +3,23 @@
     background-size: cover;
     padding: 100px 0px;
     color: #fff;
+    @include tablet{
+        padding: 70px 0;
+    }
 
     &__wrapper{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         margin: 0 -15px;
+        @include mobile{
+            margin: 0;
+        }
         & > *{
             margin: 0 15px;
+            @include tablet{
+                margin: 10px;
+            }
         }
     }
     &__title, &__subtitle, &__description{
@@ -29,6 +38,9 @@
         font-weight: normal;
         margin: 0 auto;
         margin-bottom: 60px;
+        @include tablet{
+            margin-bottom: 40px;
+        }
     }
     &__description{
         margin-top: 60px;

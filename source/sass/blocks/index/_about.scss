@@ -2,10 +2,19 @@
     background: url('../img/raster/about-background.png') no-repeat center;
     background-size: cover;
     &__wrapper{
-        // display: flex;
         max-width: 570px;
         background-color: $squash;
         padding: 100px 125px 125px 100px;
+        @include tablet{
+            max-width: 360px;
+            // min-width: 200px;
+            width: unset;
+            padding: 70px 95px 95px 70px;
+        }
+        @include mobile{
+            width: auto;
+            padding: 30px;
+        }
     }
 
     &__title{
@@ -14,7 +23,13 @@
         line-height: 1.38;
         text-transform: uppercase;
         margin: 0;
-        // display: block;
+        @include tablet{
+            font-size: 34px;
+            max-width: 330px;
+        }
+        @include mobile{
+            font-size: 22px;
+        }
     }
     &__subtitle {
         margin: 0;
@@ -22,6 +37,14 @@
         font-size: 25px;
         font-weight: 800;
         max-width: 295px;
+        @include tablet{
+            font-size: 22px;
+            margin-top: 40px;
+        }
+        @include mobile{
+            font-size: 18px;
+            margin-top: 20px;
+        }
     }
     &__list{
         margin: 0;
@@ -31,6 +54,12 @@
 .advantages-list{
     @include reset-list;
     margin-top: 100px;
+    @include tablet{
+        margin-top: 70px;
+    }
+    @include mobile{
+        margin-top: 50px;
+    }
     &__item{
         display: flex;
         align-items: center;
@@ -73,7 +102,7 @@
     &__description{
         margin: 0;
         margin-left: 50px;
-        font-size: 18px;
+        max-width: 265px;
     }
     &-icon{
             position: absolute;

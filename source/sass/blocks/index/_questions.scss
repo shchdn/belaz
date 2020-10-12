@@ -1,19 +1,23 @@
 .questions{
     background: $section-secondary-color;
-
+    padding: 100px 0;
+    @include tablet{
+        padding: 70px 0;
+    }
     &__wrapper{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 100px 0px 100px 0px;
         color: #fff;
     }
     &__title{
+        margin: 0;
         font-size: 36px;
         font-weight: 900;
         text-align: center;
     }
     &__subtitle{
+        margin: 0;
         margin-top: 30px;
         font-size: 20px;
         font-weight: normal;
@@ -24,15 +28,27 @@
         justify-content: space-between;
         width: 100%;
         margin-top: 100px;
+        @media (max-width: 900px){
+            flex-direction: column;
+            justify-content: center;
+            width: auto;
+            margin-top: 50px;
+        }
     }
     &-list{
         @include reset-list;
+        @media (max-width: 900px){
+            order: 2;
+            margin-top: 40px;
+        }
         &__item{
-            padding-left: 30px;
             font-size: 16px;
 
             & + &{
                 margin-top: 55px;
+                @include tablet{
+                    margin-top: 40px;
+                }
             }
 
             &--secondary{
@@ -94,18 +110,29 @@
     }
     &__image{
         height: 390px;
-        position: relative;
-        &::after{
-            content: 'Эдуард Викторович,\AДиректор ООО "Eddie`s-Car"';
-            white-space: pre;
-            font-size: 14px;
-            position: absolute;
-            padding: 10px 20px;
-            background: $section-secondary-color;
-            opacity: 0.8;
-            width: 230px;
-            bottom: 0;
-            left: 0;
+        width: 570px;
+        @include tablet{
+            height: 300px;
+            width: auto;
+        }
+        &-wrapper{
+            height: 390px;
+            position: relative;  
+            @include tablet{
+                height: 300px;
+            }
+            &::after{
+                content: 'Эдуард Викторович,\AДиректор ООО "Eddie`s-Car"';
+                white-space: pre;
+                font-size: 14px;
+                position: absolute;
+                padding: 10px 20px;
+                background: $section-secondary-color;
+                opacity: 0.8;
+                width: 230px;
+                bottom: 0;
+                left: 0;
+            }  
         }
     }
 }

@@ -1,5 +1,8 @@
 .crew{
-    padding: 100px 0px 100px 0px;
+    padding: 100px 0 85px 0; 
+    @include tablet{
+        padding: 70px 0 55px 0;
+    }
 
     &__title{
         text-align: center;
@@ -10,9 +13,13 @@
         @include reset-list;
         display: flex;
         justify-content: space-around;
-        margin-top: 100px;
+        margin-top: 85px;
+        @include tablet{
+            margin-top: 50px;
+        }
 
         &__item{
+            margin: 15px;
             display: flex;
             flex-direction: column;
             align-items: center;

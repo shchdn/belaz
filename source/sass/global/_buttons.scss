@@ -9,6 +9,10 @@
         font-weight: 700;
         text-transform: uppercase;
         cursor: pointer;
+        @include mobile{
+            width: 100%;
+            font-size: 14px;
+        }
     }
     &-primary{
         background-color: $squash;

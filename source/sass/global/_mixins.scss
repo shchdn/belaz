@@ -1,23 +1,17 @@
-@mixin text-input{
-   border: none;
-   background-color: $input-color;
-   background-repeat: no-repeat;
-   background-position: 90% center;
-   width: 370px;
-   // height: 70px;
-   padding: 30px 30px 30px;
-   font-size: 13px;
-   text-transform: uppercase;
-}
-
-@mixin phone{
-   text-decoration: none;
-   color: #fff;
-   font-weight: 900;
-}
-
 @mixin reset-list {
    margin: 0;
    padding: 0;
    list-style: none;
+}
+
+@mixin mobile {
+   @media (max-width: $tablet-width) {
+     @content;
+   }
+}
+ 
+@mixin tablet {
+   @media (max-width: $desktop-width) {
+      @content;
+   }
 }
