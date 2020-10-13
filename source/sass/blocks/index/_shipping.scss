@@ -1,19 +1,31 @@
 .shipping{
     background: $section-color;
-    &__wrapper{
-        padding: 100px 0;
+    padding: 100px 0;
+    @include tablet{
+        padding: 70px 0 60px 0;
     }
+    @include mobile{
+        padding: 40px 0;
+    }
+
     &__title, &__subtitle{
         color:#fff;
     }
     &__title{
+        margin: 0;
         margin-bottom:30px;
         text-align: center;
+        @include tablet{
+            margin-bottom: 10px;
+        }
     }
 
     &__subtitle{
         font-size: 20px;
         text-align: center;
+        @include mobile{
+            font-size: 16px;
+        }
     }
     
     &-list{
@@ -21,31 +33,57 @@
         display: flex;
         margin-top: 100px;
         justify-content: space-between;
+        flex-wrap: wrap;
+        @include tablet{
+            justify-content: center;
+            margin-top: 50px;
+        }
+        @include mobile{
+            margin-top: 30px;
+        }
         &__item{
             display: flex;
             align-items: center;
             flex-direction: column;
             width: 200px;
-            
+            @include tablet{
+                margin: 10px;
+            }
             &--engine::before{
                 width: 95px;
                 height: 100px;
                 background: url('../img/vector/sprite.svg#icon-shipping-engine');
+                @include tablet{
+                    width: 75px;
+                    height: 80px;       
+                }
             }
             &--truck::before{
                 width: 100px;
                 height: 88px;
                 background: url('../img/vector/sprite.svg#icon-shipping-truck');
+                @include tablet{
+                    width: 80px;
+                    height: 70px;       
+                }
             }
             &--calendar::before{
                 width: 100px;
                 height: 93px;
                 background: url('../img/vector/sprite.svg#icon-shipping-calendar');
+                @include tablet{
+                    width: 80px;
+                    height: 73px;       
+                }
             }
             &--map::before{
                 width: 95px;
                 height: 92px;
                 background: url('../img/vector/sprite.svg#icon-shipping-map');
+                @include tablet{
+                    width: 75px;
+                    height: 72px;       
+                }
             }
             &--engine::before, &--truck::before, &--calendar::before, &--map::before{
                 content: '';
@@ -61,9 +99,14 @@
         &__description{
             color:#fff;
             text-align: center;
-            font-size: 18px;
             margin: 0;
             margin-top: 150px;
+            @include tablet{
+                margin-top: 120px;
+            }
+            @include mobile{
+                margin-top: 100px;
+            }
         }
         &-main + &-main{
             margin-left: 10px;

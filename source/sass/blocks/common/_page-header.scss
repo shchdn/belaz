@@ -1,10 +1,18 @@
 .page-header {
     background-color: $header-color;
-
+    &__logo{
+        width: 190px;
+        height: 40px;
+        @include tablet{
+            width: 165px;
+            height: 34px;
+        }
+    }
     &__wrapper{
         display: flex;
         align-items: center;
-        min-height:100px;
+        min-height:50px;
+        padding: 25px 0;
         justify-content: space-between;
     }
     &__worktime{
@@ -16,6 +24,9 @@
     }
     &__contacts{
         display: flex;
+        @include mobile{
+            display: none;
+        }
         &-inner{
             display: flex;
             flex-direction: column;
