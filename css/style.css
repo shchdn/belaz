@@ -311,9 +311,10 @@ template {
 html, body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "ProximaNova";
+  font-family: "ProximaNova", sans-serif;
   font-size: 18px;
-  font-weight: normal; }
+  font-weight: normal;
+  color: #fff; }
   @media (max-width: 1249px) {
     html, body {
       font-size: 16px; } }
@@ -507,8 +508,7 @@ h1, h2, h3, h4, h5 {
     margin: 0;
     font-size: 12px;
     line-height: 24px;
-    text-align: center;
-    color: #fff; }
+    text-align: center; }
   .page-header__contacts {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -533,8 +533,7 @@ h1, h2, h3, h4, h5 {
 
 .page-footer {
   background-color: #191919;
-  padding: 40px 0;
-  color: #fff; }
+  padding: 40px 0; }
   @media (max-width: 767px) {
     .page-footer {
       padding: 20px 0; } }
@@ -554,14 +553,13 @@ h1, h2, h3, h4, h5 {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column; } }
-  .page-footer__contacts {
+  .page-footer__contacts-wrapper {
     max-width: 165px; }
-
-.contacts__title {
-  font-size: 13px;
-  margin: 0;
-  margin-bottom: 10px;
-  text-align: center; }
+  .page-footer__text {
+    font-size: 13px;
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center; }
 
 .copyright {
   margin: 0;
@@ -583,8 +581,9 @@ h1, h2, h3, h4, h5 {
     margin-bottom: -7px; }
 
 .about {
-  background: url("../img/raster/about-background.png") no-repeat center;
-  background-size: cover; }
+  background: url("../img/raster/about-background.jpg") no-repeat center;
+  background-size: cover;
+  color: #000; }
   .about__wrapper {
     max-width: 570px;
     background-color: #f7b516;
@@ -679,9 +678,10 @@ h1, h2, h3, h4, h5 {
     position: absolute; }
 
 .price {
-  background: url("../img/raster/price-background.png") no-repeat left;
+  background: url("../img/raster/price-background.jpg") no-repeat left;
   background-size: contain;
-  padding: 100px 0 98px; }
+  padding: 100px 0 98px;
+  color: #000; }
   @media (max-width: 1249px) {
     .price {
       padding: 70px 0 68px;
@@ -718,6 +718,7 @@ h1, h2, h3, h4, h5 {
     .price__form {
       width: 100%; } }
   .price__title {
+    color: #000;
     margin: 0;
     margin-bottom: 60px;
     font-size: 30px;
@@ -748,7 +749,6 @@ h1, h2, h3, h4, h5 {
               transform: translate(100%);
       position: absolute;
       right: -30px;
-      top: 0;
       width: 30px;
       height: 30px;
       background: url("../img/vector/sprite.svg#icon-clock") no-repeat center;
@@ -758,7 +758,8 @@ h1, h2, h3, h4, h5 {
         -webkit-box-ordinal-group: 3;
             -ms-flex-order: 2;
                 order: 2;
-        margin: 10px 60px 0 auto; } }
+        margin: 10px 60px 0 auto;
+        top: 0; } }
   .price__input-wrapper, .price__get-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -787,8 +788,6 @@ h1, h2, h3, h4, h5 {
   @media (max-width: 767px) {
     .shipping {
       padding: 40px 0; } }
-  .shipping__title, .shipping__subtitle {
-    color: #fff; }
   .shipping__title {
     margin: 0;
     margin-bottom: 30px;
@@ -880,7 +879,6 @@ h1, h2, h3, h4, h5 {
     .shipping-list__icon {
       position: absolute; }
     .shipping-list__description {
-      color: #fff;
       text-align: center;
       margin: 0;
       margin-top: 150px; }
@@ -894,10 +892,9 @@ h1, h2, h3, h4, h5 {
       margin-left: 10px; }
 
 .search {
-  background: url("../img/raster/search-background.png") no-repeat center;
+  background: #0b3554 url("../img/raster/search-background.jpg") no-repeat center;
   background-size: cover;
-  padding: 100px 0px;
-  color: #fff; }
+  padding: 100px 0px; }
   @media (max-width: 1249px) {
     .search {
       padding: 70px 0; } }
@@ -962,7 +959,8 @@ h1, h2, h3, h4, h5 {
           margin-top: 15px; } }
 
 .warranty {
-  padding: 100px 0; }
+  padding: 100px 0;
+  color: #000; }
   @media (max-width: 1249px) {
     .warranty {
       padding: 70px 0; } }
@@ -1025,8 +1023,7 @@ h1, h2, h3, h4, h5 {
 
 .bonus {
   padding: 100px 0;
-  background: #08243e;
-  color: #fff; }
+  background: #08243e; }
   @media (max-width: 1249px) {
     .bonus {
       padding: 70px 0; } }
@@ -1148,8 +1145,7 @@ h1, h2, h3, h4, h5 {
             flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
-    color: #fff; }
+            align-items: center; }
   .questions__title {
     margin: 0;
     font-weight: 900;
@@ -1250,8 +1246,8 @@ h1, h2, h3, h4, h5 {
       -webkit-transition: all 0.2s linear;
       transition: all 0.2s linear; }
     .questions-list__issue:hover {
-      border-bottom: 1px solid #579eff;
-      color: #579eff;
+      border-bottom: 1px solid #1866af;
+      color: #1866af;
       cursor: pointer; }
   .questions__image {
     height: 390px;
@@ -1291,7 +1287,8 @@ h1, h2, h3, h4, h5 {
             padding: 5px; } }
 
 .comfort {
-  padding: 100px 0; }
+  padding: 100px 0;
+  color: #000; }
   @media (max-width: 1249px) {
     .comfort {
       padding: 70px 0 60px; } }
@@ -1367,8 +1364,7 @@ h1, h2, h3, h4, h5 {
 
 .storage {
   background: #0b3554;
-  padding: 100px 0 85px 0;
-  color: #fff; }
+  padding: 100px 0 85px 0; }
   @media (max-width: 1249px) {
     .storage {
       padding: 70px 0 55px 0; } }
@@ -1431,7 +1427,8 @@ h1, h2, h3, h4, h5 {
           margin-top: 20px; } }
 
 .crew {
-  padding: 100px 0 85px 0; }
+  padding: 100px 0 85px 0;
+  color: #000; }
   @media (max-width: 1249px) {
     .crew {
       padding: 70px 0 55px 0; } }
@@ -1524,10 +1521,9 @@ h1, h2, h3, h4, h5 {
           margin-top: 20px; } }
 
 .consultation {
-  background: url("../img/raster/consultation-background.png") no-repeat center;
+  background: #08243e url("../img/raster/consultation-background.jpg") no-repeat center;
   background-size: cover;
-  padding: 100px 0;
-  color: #fff; }
+  padding: 100px 0; }
   @media (max-width: 1249px) {
     .consultation {
       padding: 70px 0; } }
@@ -1584,9 +1580,10 @@ h1, h2, h3, h4, h5 {
         margin: 15px 0 0; } }
 
 .office {
-  background: url("../img/raster/office-background.png") no-repeat center;
+  background: url("../img/raster/office-background.jpg") no-repeat center;
   background-size: cover;
-  padding: 100px 0; }
+  padding: 100px 0;
+  color: #000; }
   @media (max-width: 1249px) {
     .office {
       padding: 70px 0; } }
