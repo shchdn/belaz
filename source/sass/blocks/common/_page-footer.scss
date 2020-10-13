@@ -2,10 +2,16 @@
     background-color: $header-color;
     padding: 40px 0 ;
     color: #fff;
+    @include mobile{
+        padding: 20px 0;
+    }
     &__wrapper{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include mobile{
+            flex-direction: column;
+        }
     }
     &__contacts{
         max-width: 165px;
@@ -22,6 +28,9 @@
 .copyright{
     margin: 0;
     font-size: 12px;
+    @include mobile{
+        margin: 20px 0;
+    }
     &__love-icon{
         display: inline-block;
         margin-bottom: -5px;
@@ -35,7 +44,5 @@
         width: 70px;
         height: 20px;
         margin-bottom: -7px;
-        
-
     }
 }

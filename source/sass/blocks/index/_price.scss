@@ -67,6 +67,7 @@
         @include tablet{
             order: 2;
             margin: 10px 60px 0 auto;
+            top: 0;
         }
     }
     &__input-wrapper, &__get-wrapper{

@@ -1,5 +1,11 @@
 .warranty{
     padding: 100px 0;
+    @include tablet{
+        padding: 70px 0;
+    }
+    @include mobile{
+        padding: 40px 0;
+    }
 
     &__title{
         margin: 0 auto;
@@ -23,12 +29,16 @@
             margin-top: 100px;
             width: 230px;
             height: 300px;
+            @include mobile{
+                margin-top: 50px;
+            }
         }
         &__description{
+            margin: 0;
             text-align: center;
             margin-top: 40px;
             font-size: 18px;
-            width: 345px;
+            max-width: 345px;
         }
         &__link{
             margin-top: 40px;

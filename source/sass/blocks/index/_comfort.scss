@@ -1,7 +1,10 @@
 .comfort{
     padding: 100px 0; 
     @include tablet{
-        padding: 70px 0;
+        padding: 70px 0 60px;
+    }
+    @include mobile{
+        padding: 40px 0;
     }
     &__title{
         margin: 0;
@@ -13,17 +16,30 @@
         font-size: 20px;
         font-weight: normal;
         text-align: center;
+        @include mobile{
+            font-size: 16px;
+        }
     }
     &-list{
         @include reset-list;
         margin-top: 100px;
         display: flex;
         justify-content: space-around;
-
+        flex-wrap: wrap;
+        @include tablet{
+            margin-top: 60px;
+        }
+        @include mobile{
+            margin-top: 40px;
+            justify-content: center;
+        }
         &__item{
             display: flex;
             flex-direction: column;
             align-items: center;
+            @include mobile{
+                margin: 10px;
+            }
             &--wallet::before{
                 background: url('../img/raster/icon-comfort-wallet.png');
             }

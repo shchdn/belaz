@@ -7,7 +7,6 @@
         padding: 100px 125px 125px 100px;
         @include tablet{
             max-width: 360px;
-            // min-width: 200px;
             width: unset;
             padding: 70px 95px 95px 70px;
         }

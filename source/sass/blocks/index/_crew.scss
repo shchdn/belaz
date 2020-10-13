@@ -3,6 +3,10 @@
     @include tablet{
         padding: 70px 0 55px 0;
     }
+    @include mobile{
+        padding: 40px 0;
+    }
+
 
     &__title{
         text-align: center;
@@ -14,8 +18,14 @@
         display: flex;
         justify-content: space-around;
         margin-top: 85px;
+        flex-wrap: wrap;
         @include tablet{
             margin-top: 50px;
+            justify-content: center;
+        }
+        @include mobile{
+            margin-top: 20px;
+            justify-content: center;
         }
 
         &__item{
@@ -32,6 +42,10 @@
             width: 170px;
             border-radius: 50%;
             border: 5px solid $icon-border-color;
+            @include mobile{
+                height: 120px;
+                width: 120px;
+            }
 
             &--deliveliry::before{
                 width: 70px;
@@ -58,10 +72,12 @@
         }
         &__description{
             margin: 0;
-            font-size: 18px;
             margin-top: 40px;
             text-align: center;
             max-width: 300px;
+            @include mobile{
+                margin-top: 20px;
+            }
         }
     }
 }

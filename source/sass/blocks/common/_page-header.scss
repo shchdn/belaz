@@ -24,7 +24,7 @@
     }
     &__contacts{
         display: flex;
-        @include tablet{
+        @include mobile{
             display: none;
         }
         &-inner{

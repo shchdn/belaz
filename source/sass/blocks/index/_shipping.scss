@@ -1,11 +1,13 @@
 .shipping{
     background: $section-color;
-    &__wrapper{
-        padding: 100px 0;
-        @include tablet{
-            padding: 70px 0;
-        }
+    padding: 100px 0;
+    @include tablet{
+        padding: 70px 0 60px 0;
     }
+    @include mobile{
+        padding: 40px 0;
+    }
+
     &__title, &__subtitle{
         color:#fff;
     }
@@ -13,11 +15,17 @@
         margin: 0;
         margin-bottom:30px;
         text-align: center;
+        @include tablet{
+            margin-bottom: 10px;
+        }
     }
 
     &__subtitle{
         font-size: 20px;
         text-align: center;
+        @include mobile{
+            font-size: 16px;
+        }
     }
     
     &-list{
@@ -25,8 +33,13 @@
         display: flex;
         margin-top: 100px;
         justify-content: space-between;
+        flex-wrap: wrap;
         @include tablet{
-            justify-content: space-around;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        @include mobile{
+            margin-top: 30px;
         }
         &__item{
             display: flex;
@@ -34,7 +47,7 @@
             flex-direction: column;
             width: 200px;
             @include tablet{
-                padding: 0 5px;
+                margin: 10px;
             }
             &--engine::before{
                 width: 95px;
@@ -86,12 +99,13 @@
         &__description{
             color:#fff;
             text-align: center;
-            font-size: 18px;
             margin: 0;
             margin-top: 150px;
             @include tablet{
                 margin-top: 120px;
-                font-size: 16px;
+            }
+            @include mobile{
+                margin-top: 100px;
             }
         }
         &-main + &-main{

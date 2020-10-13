@@ -16,11 +16,19 @@
             width: 20px;
             height: 18px;
             background: url(../img/vector/sprite.svg#icon-email);
+            @include mobile{
+                width: 16px;
+                height: 14px;
+            }
         }
         &--phone::after{
             width: 20px;
             height: 20px;
             background: url(../img/vector/sprite.svg#icon-call);
+            @include mobile{
+                width: 15px;
+                height: 15px;
+            }
         }
         &--email::after, &--phone::after{
             content: '';
@@ -32,10 +40,16 @@
             background-repeat: no-repeat;
             background-position: center;
             cursor: text;
+            @include mobile{
+                right: 15px;
+            }
         }
         &--email .form-section__input-text,
         &--phone .form-section__input-text{
             padding-right: 80px;
+            @include mobile{
+                padding-right:40px;
+            }
         }
 
     }
@@ -48,5 +62,8 @@
         padding: 30px;
         font-size: 13px;
         text-transform: uppercase;
+        @include mobile{
+            padding: 30px 15px;
+        }
     }
 }

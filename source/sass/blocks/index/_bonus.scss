@@ -5,6 +5,10 @@
     @include tablet{
         padding: 70px 0;
     }
+    @include mobile{
+        padding: 40px 0;
+    }
+
     &__wrapper{
         display: flex;
         flex-direction: column;
@@ -23,6 +27,9 @@
         margin: 100px -30px 0 -30px;
         @include tablet{
             margin: 70px -15px 0 -15px;
+        }
+        @include mobile{
+            margin-top: 10px;
         }
         &__item{
             margin: 0 30px;
