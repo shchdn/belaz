@@ -15,8 +15,8 @@ ymaps.ready(function () {
         }
     });
     myMap = new ymaps.Map('map', {
-            center: [59.939235, 30.317337],
-            zoom: 15,
+            center: [64.544543, 40.515403],
+            zoom: 17,
             controls: [inputSearch, zoomControl]
         }, {
             searchControlProvider: 'yandex#search'
@@ -27,20 +27,20 @@ ymaps.ready(function () {
         //     '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
         // ),
 
-        myPlacemark = new ymaps.Placemark([59.938635, 30.323118], {
-            hintContent: 'Магазин Cat-Energy',
-            // balloonContent: 'Это красивая метка'
+        myPlacemark = new ymaps.Placemark([64.544543, 40.515403], {
+            hintContent: 'Eddie`s-Car',
+            balloonContent: 'просп. Троицкий, 65, Архангельск'
         }, {
             // Опции.
             // Необходимо указать данный тип макета.
             iconLayout: 'default#image',
             // Своё изображение иконки метки.
-            iconImageHref: 'img/raster/map-pin.png',
+            // iconImageHref: 'img/raster/map-pin.png',
             // Размеры метки.
-            iconImageSize: [113, 106],
+            // iconImageSize: [113, 106],
             // Смещение левого верхнего угла иконки относительно
             // её "ножки" (точки привязки).
-            iconImageOffset: [-53, -104]
+            // iconImageOffset: [-53, -104]
         });
 
     myMap.geoObjects
