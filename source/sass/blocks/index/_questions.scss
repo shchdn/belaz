@@ -42,7 +42,8 @@
         }
     }
     &-list{
-        @include reset-list;
+        margin: 0;
+        padding: 0;
         @media (max-width: 900px){
             order: 2;
             margin-top: 40px;
@@ -62,16 +63,24 @@
                 & a{
                     color:$text-primary-color;
                     text-decoration: none;
+                    margin-left: 25px;
+                    border-bottom: 1px solid $text-primary-color;
+                    &:hover{
+                        border-bottom: 1px solid $text-hover-questions-color;
+                        color: $text-hover-questions-color;
+                        cursor: pointer;
+                        transition: all 0.2s linear;
+                    }
                 }
             }
             &--secondary::before{
                 content: "";
-                background-image: url("../img/vector/icon-questions-reload.svg");
+                background-image: url("../img/vector/sprite.svg#icon-questions-reload");
                 background-size: 18px 20px;
                 width: 18px; 
                 height: 20px; 
                 position: absolute;
-                margin-left:-48px;
+                margin-left:-17px;
             }
 
             &-check{
@@ -109,6 +118,7 @@
 
         }
         &__issue{
+            margin-left: 25px;
             border-bottom: 1px solid $text-primary-color;
             transition: all 0.2s linear;
         }
