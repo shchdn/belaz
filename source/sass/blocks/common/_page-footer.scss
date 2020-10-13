@@ -1,7 +1,6 @@
 .page-footer{
-    background-color: $header-color;
+    background-color: $header-footer-color;
     padding: 40px 0 ;
-    color: #fff;
     @include mobile{
         padding: 20px 0;
     }
@@ -13,36 +12,13 @@
             flex-direction: column;
         }
     }
-    &__contacts{
+    &__contacts-wrapper{
         max-width: 165px;
     }
-}
-.contacts{
-    &__title{
+    &__text{
         font-size: 13px;
         margin: 0;
         margin-bottom: 10px;
         text-align: center;
-    }
-}
-.copyright{
-    margin: 0;
-    font-size: 12px;
-    @include mobile{
-        margin: 20px 0;
-    }
-    &__love-icon{
-        display: inline-block;
-        margin-bottom: -5px;
-        width: 15px;
-        height: 15px;
-        background: url('../img/raster/icon-love.png') no-repeat center;
-        font-size: 0;
-    }
-    &__logo{
-        display: inline-block;
-        width: 70px;
-        height: 20px;
-        margin-bottom: -7px;
     }
 }

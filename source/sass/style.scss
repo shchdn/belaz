@@ -12,8 +12,10 @@
     // Common
     @import './blocks/common/page-header';
     @import './blocks/common/page-footer';
+    @import './blocks/common/copyright';
     // Index
     @import './blocks/index/about';
+    @import './blocks/index/advantages-list';
     @import './blocks/index/price';
     @import './blocks/index/shipping';
     @import './blocks/index/search';
@@ -29,7 +31,4 @@
 //
 
 // TODO: 
-// backgrounds for img
-// add buttons
 // backgrounds png to jpg
-// отрицательный margin у листов или посмотреть контейнер

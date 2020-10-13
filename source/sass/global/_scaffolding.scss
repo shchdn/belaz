@@ -1,9 +1,9 @@
 html, body {
     box-sizing: border-box;
     font-family: $proximanova;
-    // user-select: none;
     font-size: 18px;
     font-weight: normal;
+    color: $text-primary-color;
     @include tablet{
         font-size: 16px;
     }
@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5 {
 
 .phone-number{
     text-decoration: none;
-    color: #fff;
+    color: $text-primary-color;
     font-weight: 900;
     font-size:18px;
     padding: 0;

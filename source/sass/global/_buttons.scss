@@ -1,7 +1,7 @@
 .button{
     &-primary, &-secondary, &-header{
         border:none;
-        color:#fff;
+        color: $text-primary-color;
         width: 370px;
         padding: 25px;
         text-align: center;
@@ -15,14 +15,14 @@
         }
     }
     &-primary{
-        background-color: $squash;
+        background-color: $button-primary-color;
     }
     &-secondary{
-        background-color: #1866af;
+        background-color: $button-secondary-color;
     }
     &-header{
         width: 170px;
         font-size: 12px;
-        background: linear-gradient(325deg, #273588, #1c62ac);
+        background: $button-header-gradient;
     }
 }

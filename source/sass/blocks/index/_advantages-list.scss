@@ -1,0 +1,57 @@
+.advantages-list{
+    @include reset-list;
+    margin-top: 100px;
+    @include tablet{
+        margin-top: 70px;
+    }
+    @include mobile{
+        margin-top: 50px;
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+
+        &--piggy::before{
+            width: 25px;
+            height: 30px;
+            background: url('../img/vector/sprite.svg#icon-piggy-bank');
+        }
+        &--truck::before{
+            width: 30px;
+            height: 24px;
+            background: url('../img/vector/sprite.svg#icon-truck');
+        }
+        &--calendar::before{
+            width: 30px;
+            height: 30px;
+            background: url('../img/vector/sprite.svg#icon-calendar');
+        }
+        &--medal::before{
+            width: 23px;
+            height: 30px;
+            background: url('../img/vector/sprite.svg#icon-medal');
+        }
+        &--piggy::before, &--truck::before, 
+        &--calendar::before, &--medal::before{
+            content: '';
+            position: absolute;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            
+        }
+
+        & + &{
+            margin-top: 48px;
+        }
+    }
+
+    &__description{
+        margin: 0;
+        margin-left: 50px;
+        max-width: 265px;
+    }
+    &-icon{
+        position: absolute;
+    }
+}

@@ -2,6 +2,7 @@
     background: url('../img/raster/price-background.png') no-repeat left;
     background-size: contain;
     padding: 100px 0 98px;
+    color: $text-secondary-color;
     @include tablet{
         padding: 70px 0 68px;
         background-size: cover;
@@ -33,6 +34,7 @@
         }
     }
     &__title{
+        color: $text-secondary-color;
         margin: 0;
         margin-bottom: 60px;
         font-size: 30px;

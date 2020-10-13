@@ -1,5 +1,6 @@
 .comfort{
     padding: 100px 0; 
+    color: $text-secondary-color;
     @include tablet{
         padding: 70px 0 60px;
     }

@@ -2,6 +2,8 @@
     background: url('../img/raster/office-background.png') no-repeat center;
     background-size: cover;
     padding: 100px 0;
+    color: $text-secondary-color;
+
     @include tablet{
         padding: 70px 0;
     }
@@ -25,7 +27,7 @@
         margin: 35px auto 0 auto;
         text-align: center;
         font-size: 24px;
-        color:#000;
+        color: $text-secondary-color;
         @include mobile{
             font-size: 20px;
         }

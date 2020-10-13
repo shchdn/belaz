@@ -1,12 +1,12 @@
 .crew{
     padding: 100px 0 85px 0; 
+    color: $text-secondary-color;
     @include tablet{
         padding: 70px 0 55px 0;
     }
     @include mobile{
         padding: 40px 0;
     }
-
 
     &__title{
         text-align: center;
@@ -41,7 +41,7 @@
             height: 170px;
             width: 170px;
             border-radius: 50%;
-            border: 5px solid $icon-border-color;
+            border: 5px solid $border-crew-color;
             @include mobile{
                 height: 120px;
                 width: 120px;

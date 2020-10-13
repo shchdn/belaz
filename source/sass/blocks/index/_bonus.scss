@@ -1,7 +1,6 @@
 .bonus{
     padding: 100px 0;
-    background: $section-color;
-    color:#fff;
+    background: $page-primary-color;
     @include tablet{
         padding: 70px 0;
     }
@@ -48,7 +47,7 @@
             height: 100px;
             width: 100px;
             border-radius: 50%;
-            border: #fff solid 2px;
+            border: $border-bonus-color solid 2px;
             display: flex;
             align-items: center;
             justify-content: center;
