@@ -5,7 +5,7 @@
   "description": "",
   "devDependencies": {
     "autoprefixer": "^9.8.6",
-    "browser-sync": "^2.26.12",
+    "browser-sync": "^2.27.10",
     "del": "^5.1.0",
     "gh-pages": "^3.1.0",
     "gulp": "^4.0.2",
